@@ -2,8 +2,8 @@
 ## Author: Derdriu McAteer
 
 ## Links 
-- [portfolio]
-- [github_repository]
+- [portfolio](https://derdriu-mc-ateer-t1-a2-portfolio.vercel.app/index.html)
+- [Github Repository](https://github.com/mini109/DerdriuMcAteer_T1A2_Portfolio)
 - [presentation]
 
 ## Purpose
