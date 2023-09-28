@@ -1,0 +1,166 @@
+/* Grid Display for the About Component - all screen sizes*/
+.about{
+  display: grid;
+  grid-template-areas: 
+  'Background '
+  'Education '
+  'Experience'
+  'Skills '
+  'Blog ';
+}
+
+
+/* Styling for each section */
+.about_card {
+  padding: 20px;
+  margin: 10px;
+  font-size: 2rem;
+}
+
+/* Set grid area for each card */
+#background {
+  grid-area: Background;
+  text-align: center;
+}
+
+#education {
+  grid-area: Education;
+  text-align: right;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+#experience {
+  grid-area: Experience;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#skills {
+  grid-area: Skills;
+  margin-top: 0;
+}
+
+#blog{
+  grid-area: Blog;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling on the button for resume download */
+.resume {
+  margin-top: 10px;
+  color: #606C38;
+}
+
+/* Styling for the Information Component */
+.information {
+  background-color: #CEE5D0;
+}
+
+/* Styling for Text */
+h3 {
+  color: #606C38;
+  text-align: center;
+  padding: 2vh;
+  font-size: 3rem;
+}
+
+h4 {
+  color: #606C38;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+b {
+  color: #606C38;
+  background-color: #FCF8E8;
+}
+
+/* Styling for Blog Component */
+.blog-posts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.post{
+  border: 1px solid black;
+  margin: 2vw;
+  width: 45%;
+  padding:5px;
+  text-align: left;
+  border: 10px solid #CEE5D0;
+}
+
+#blog_button {
+  background-color: #CEE5D0;
+  border: none;
+  height: 50px;
+  width: 300px;
+  font-size: 2rem;
+  border-radius: 25px;
+}
+
+/* For smaller screens have single comlumn for skills and blog posts */
+  /* Also smaller font sizes for readibility */
+@media (max-width: 460px) {
+  .about_card {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  #skills {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .post{
+    margin: 2vw;
+    width: 100%;
+    padding:5px;
+  }
+}
+
+/* For larger screens - have the skills across two rows */
+@media (min-width: 461px) {
+  #skills {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+  }
+  /* Allows header to take entire row for skills*/
+  h4 {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* For extra large screens - have the skills across one row */
+@media (min-width:799px){
+  #skills {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+  }
+  /* Allows header to take entire row for skills*/
+  h4 {
+    grid-column: 1 / span 4;
+  }
+}

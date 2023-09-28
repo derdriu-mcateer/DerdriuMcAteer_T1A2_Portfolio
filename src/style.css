@@ -1,0 +1,67 @@
+/* Reset for all pages  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: quicksand;
+}
+
+/* Logo Styling */
+.logo{
+  height:20vh;
+  border-radius: 50%;
+}
+
+/* Navigation Bar Component Styling */
+a {
+  text-decoration: none;
+  color: #606C38;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  font-size: 2vw;
+}
+
+
+.nav_links li {
+  display: inline-block;
+  padding:20px;
+  list-style: none;
+}
+
+/* Special Styling on Link to Contact Page */
+.contact_button {
+  padding:5px;
+  background-color: #CEE5D0;
+  border: none;
+  font-size: 2vw;
+}
+
+/* Footer Component Styling  */
+footer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: 3vh;
+  font-size: 2rem;
+  background-color: white;
+  color: #606C38;
+}
+
+/* Reduce Logo Size on Smaller Screen */
+@media (max-width:300px) {
+  .logo{
+    height:7vh;
+    width: auto;
+    border-radius: 50%;
+  }
+}

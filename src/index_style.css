@@ -1,0 +1,132 @@
+
+b{
+    color: #606C38;
+    background-color: #FEFAE0;
+}
+
+h3 {
+    text-decoration: underline;
+    color: #606C38; 
+}
+
+.hero{
+    border-radius: 50%;
+}
+
+.about_link {
+    color: #606C38;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    background-color: #FEFAE0;
+}
+
+/* Styling for the Intro Component */
+.intro{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 6vw;
+    padding:3vw;
+    background-color: #CEE5D0;
+}
+
+
+/* Remove Hero Image on extra small screens */
+@media (max-width:180px) {
+    .hero {
+        display: none;
+    }
+}
+
+/* Smaller Screens - move hero to underneath and smaller font */
+@media (max-width: 690px) {
+    .intro{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 4vw;
+        padding:2vw;
+    }
+
+    .info{
+        width: 100%;
+        text-align: right;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    b{ 
+        font-size: 1.25rem;
+    }
+
+    .about_link {
+        font-size: 1.5rem;
+    }
+
+    .hero{
+        width: 80%;
+        height: 30vh;
+    }
+}
+
+/* Larger Screens - move hero image to left of text and increase the font sizes */
+@media (min-width: 691px) and (max-width:999px) {
+    .intro{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h3{
+        font-size:3rem;
+    }
+
+    p{
+        font-size:1.5rem;
+    }
+
+    b{
+        font-size:2rem
+    }
+
+    .info{
+        text-align: right;
+    }
+
+    .hero {
+        height: 40vh;
+        width: 30vw;
+    }
+
+}
+
+/* Extra Large Screens - increased font size for better readability and increased margins*/
+@media (min-width: 1000px) {
+    .intro{
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 2;
+    }
+
+    h3{
+        font-size:5rem;
+    }
+
+    p{
+        font-size:1.5rem;
+    }
+
+    b{
+        font-size:2rem
+    }
+
+    .info{
+        text-align: right;
+    }
+
+    .hero {
+        height: 55vh;
+        width: 25vw;
+    }
+}

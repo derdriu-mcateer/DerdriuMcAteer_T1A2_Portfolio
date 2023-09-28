@@ -1,0 +1,166 @@
+/* Grid display on contact box and styling */
+.contact-box {
+  display: grid;
+  background-color: #cee5d0;
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+  color: #606c38;
+  padding:1vw;
+}
+
+
+/* Grid Areas */
+.image {
+  grid-area: image;
+  padding:1vw;
+}
+
+.title {
+  grid-area: title;
+}
+
+.email {
+  grid-area: email;
+}
+
+.item {
+  grid-area: item;
+}
+
+.social {
+  grid-area: social;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Styling on text */
+b {
+  background-color: #fefae0;
+  text-decoration: underline;
+}
+
+.contact_section {
+  text-align: center;
+}
+
+/* Smaller Screens - show image below contact box  & smaller hero image*/
+@media (max-width: 449px) {
+  .hero {
+    height: 10vh;
+    width: 100vw;
+    display: inline;
+  }
+
+  .contact-box {
+    grid-template-areas:
+      " title"
+      " email"
+      " item"
+      " social"
+      " image";
+  }
+
+  .image {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .email {
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 900;
+  }
+
+  .social {
+    font-size: 2rem;
+  }
+}
+/* medium screens - image still below contact but larger fonts and hero image used */
+@media (min-width: 450px) and (max-width: 768px) {
+  .contact_section {
+    margin: 1vw;
+  }
+  .hero {
+    height: 20vh;
+    width: 100%;
+  }
+
+  .contact-box {
+    grid-template-areas:
+      " title"
+      " email"
+      " item"
+      " social"
+      " image";
+      
+  }
+
+  .image {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .email {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 5px;
+  }
+
+  .item {
+    font-size: 1.25rem;
+  }
+
+  .social {
+    font-size: 2rem;
+  }
+}
+
+/* Large Screen - image beside contact box and larger fonts and hero image */
+@media (min-width: 769px) {
+  .contact_section {
+    margin: 2vw;
+  }
+
+  .hero {
+    height: 40vh;
+    width: 100%;
+    padding: 2vw;
+  }
+
+  .contact-box {
+    grid-template-areas:
+      "image title"
+      "image email"
+      "image item"
+      "image social";
+    justify-content: space-around;
+    line-height: 1;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 4vw;
+  }
+
+  .email {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+
+  .item {
+    font-size: 3vw;
+  }
+
+  .social {
+    font-size: 6rem;
+  }
+}
