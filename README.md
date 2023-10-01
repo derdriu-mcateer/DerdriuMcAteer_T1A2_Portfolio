@@ -114,6 +114,7 @@ The target audience for this portfolio is an potential employer, who has sound k
 ## Tech stack (e.g. html, css, deployment platform, etc)
 - HTML-5 & CSS 
 - [Canva](https://www.canva.com/) for Logo, Banners, Sitemap & Wireframes
+- [Vercel App](https://derdriu-mc-ateer-t1-a2-portfolio.vercel.app/) for Deployment
 - [Github](https://github.com/mini109/DerdriuMcAteer_T1A2_Portfolio) for Repository
 - [Youtube](https://youtu.be/UeLk6aLoygg) for Presentation Video
 - Keynote for Slidedeck
