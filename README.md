@@ -2,9 +2,9 @@
 ## Author: Derdriu McAteer
 
 ## Links 
-- [portfolio](https://derdriu-mc-ateer-t1-a2-portfolio.vercel.app/index.html)
+- [Portfolio](https://derdriu-mc-ateer-t1-a2-portfolio.vercel.app/index.html)
 - [Github Repository](https://github.com/mini109/DerdriuMcAteer_T1A2_Portfolio)
-- [presentation]
+- [Video Presentation](https://youtu.be/UeLk6aLoygg)
 
 ## Purpose
 The purpose of this portfolio is to present myself as a skilled and professional web developer and IT professional. 
